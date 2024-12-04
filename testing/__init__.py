@@ -1,9 +1,6 @@
 # __init__.py
 from pyrogram import Client, filters
-import config
-from config import API_ID, API_HASH, BOT_TOKEN
-
-app = Client("my_bot", api_id=config.API_ID, api_hash=config.API_HASH, bot_token=config.BOT_TOKEN)
+from testing import app
 
 @app.on_message(filters.command("start"))
 def start(client, message):
