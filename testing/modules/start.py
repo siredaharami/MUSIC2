@@ -1,6 +1,9 @@
+import asyncio
 from pyrogram import Client, filters
-from testing import app
+from testing import app as bot
 
-@app.on_message(filters.command("start"))
-def start(client, message):
-    message.reply("Hello, Welcome! I'm your bot.")
+# Define the '/start' command handler
+@bot.on_message(filters.command("start"))
+async def start(client, message):
+    # Send a welcome message when the user sends the /start command
+    await message.reply("Hello! Welcome to the bot. How can I assist you today?")
