@@ -14,4 +14,7 @@ API_HASH = getenv("API_HASH")
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
+# Get it from Termux and generate your latest pyrogram string session. 
+STRING_SESSION = getenv("STRING_SESSION", None)
+
 # You can add more configuration variables as needed
