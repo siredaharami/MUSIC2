@@ -1,6 +1,6 @@
 import config
 from pyrogram import Client
-from pytgcalls import PyTgCalls, filters as pytgfl
+from pytgcalls import PyTgCalls, filters
 from pytgcalls.types import GroupCallConfig
 
 
