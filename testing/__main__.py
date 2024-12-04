@@ -18,8 +18,8 @@ async def loaded_plugins():
 
 if __name__ == "__main__":
     print("Loading plugins...")
-    loaded_plugins()
+    await loaded_plugins()
     print("All plugins imported successfully.")
     print("Bot is running...")
-    bot.start() 
-    app.start() 
+    await bot.start() 
+    await app.start() 
