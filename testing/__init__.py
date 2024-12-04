@@ -1,17 +1,17 @@
-# bot/__init__.py
-
-from pyrogram import Client
+# __init__.py
+from pyrogram import Client, filters
 from config import API_ID, API_HASH, BOT_TOKEN
 
-class MyTelegramBot(Client):
-    def __init__(self):
-        super().__init__("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
-        
+app = Client("my_bot", api_id=config.API_ID, api_hash=config.API_HASH, bot_token=config.BOT_TOKEN)
 
-    def run(self):
-        self.start()
-        print("Bot is running...")
-        self.idle()  # Keep the bot running until you press Ctrl+C
+@app.on_message(filters.command("start"))
+def start(client, message):
+    message.reply("Hello! I am your bot. How can I help you?")
 
-# Bot Client
-app = MyTelegramBot()
+@app.on_message(filters.command("help"))
+def help_command(client, message):
+    message.reply("Available commands:\n/start - Start the bot\n/help - Show this help message")
+
+@app.on_message(filters.text)
+def echo(client, message):
+    message.reply(f"You said: {message.text}")
