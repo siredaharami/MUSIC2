@@ -3,7 +3,7 @@ import os
 import importlib
 from testing import bot, app
 
-async def loaded_plugins():
+def loaded_plugins():
     plugin_dir = "testing/modules"
     plugin_package = "testing.modules"
 
