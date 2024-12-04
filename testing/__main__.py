@@ -3,7 +3,7 @@ import os
 import importlib
 from testing import bot, app
 
-async def main():
+async def loaded_plugins():
     plugin_dir = "testing/modules"
     plugin_package = "testing.modules"
 
@@ -19,6 +19,6 @@ async def main():
 
 if __name__ == "__main__":
     print("Loading plugins...")
-    main()
+    loaded_plugins()
     print("All plugins imported successfully.")
     print("Bot is running...")
