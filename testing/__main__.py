@@ -1,14 +1,6 @@
-import asyncio
-from pyrogram import idle
-from testing import bot # Import the app from init.py
-from pyrogram import filters
+# main.py
 
-async def main():
-    async with bot:
-    
-        print("Bot is running...")
+from testing import bot
 
-        await bot.idle()  # Keep the bot running
-        
 if __name__ == "__main__":
     bot.run()
