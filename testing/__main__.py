@@ -1,8 +1,9 @@
+import asyncio
 import os
 import importlib
 from testing import bot, app
 
-def load_plugins():
+async def main():
     plugin_dir = "testing/modules"
     plugin_package = "testing.modules"
 
@@ -17,6 +18,6 @@ if __name__ == "__main__":
     load_plugins()
     print("All plugins imported successfully.")
     print("Bot is running...")
-    bot.start() 
-    app.start() 
+    await bot.start() 
+    await app.start() 
     await idle()
