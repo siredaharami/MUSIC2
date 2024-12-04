@@ -1,6 +1,6 @@
 import asyncio
 from pyrogram import idle
-from testing import app # Import the app from init.py
+from testing import bot # Import the app from init.py
 from pyrogram import filters
 
 async def main():
