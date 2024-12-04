@@ -4,11 +4,11 @@ from config import API_ID, API_HASH, BOT_TOKEN
 
 # Create the bot instance
 app = Client(
-    "my_bot",
+    "testing",
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="testing.plugins")  # Point to the plugins folder
+    plugins=dict(root="testing.modules")  # Point to the plugins folder
 )
 
 # Start the bot
