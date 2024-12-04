@@ -1,13 +1,14 @@
 from pyrogram import Client, idle
 import os
+import config
 from config import API_ID, API_HASH, BOT_TOKEN
 
 # Create the bot instance
 app = Client(
     "testing",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
+    api_id=config.API_ID,
+    api_hash=config.API_HASH,
+    bot_token=config.BOT_TOKEN,
     plugins=dict(root="testing.modules")  # Point to the plugins folder
 )
 
