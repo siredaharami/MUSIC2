@@ -12,3 +12,6 @@ class MyTelegramBot(Client):
         self.start()
         print("Bot is running...")
         self.idle()  # Keep the bot running until you press Ctrl+C
+
+# Bot Client
+app = MyTelegramBot()
