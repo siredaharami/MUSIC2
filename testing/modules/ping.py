@@ -18,7 +18,7 @@ def get_readable_time(seconds: int) -> str:
     count %= 60
     return f"{days}d {hours}h {minutes}m {count}s"
 
-@app.on_message(filters.command("ping"))
+@bot.on_message(filters.command("ping"))
 async def ping_command(client, message):
     # Measure response time
     start_time = time.time()
