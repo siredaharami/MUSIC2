@@ -1,6 +1,6 @@
 import asyncio
 from pyrogram import Client, filters
-from testing import app as bot
+from testing import bot
 
 # Define the '/start' command handler
 @bot.on_message(filters.command("start"))
