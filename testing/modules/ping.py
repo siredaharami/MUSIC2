@@ -1,7 +1,7 @@
 import time
 import psutil
 import platform
-from testing import app
+from testing import bot
 from pyrogram import filters
 
 # Record the bot's start time
