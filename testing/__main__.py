@@ -1,7 +1,5 @@
-# main.py
-
-from testing import MyTelegramBot
+# __main__.py
+from __init__ import app
 
 if __name__ == "__main__":
-    bot = MyTelegramBot()
-    bot.run()
+    app.run()
