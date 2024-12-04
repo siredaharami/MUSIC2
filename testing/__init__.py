@@ -20,9 +20,3 @@ bot = Client(
 
 call = PyTgCalls(app)
 call_config = GroupCallConfig(auto_start=False)
-
-# Bot Client
-app = app()
-
-# Assistant Client
-bot = bot()
