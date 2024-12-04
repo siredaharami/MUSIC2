@@ -13,9 +13,7 @@ def loaded_plugins():
             module_name = file_name[:-3]  # Remove the .py extension
             importlib.import_module(f"{plugin_package}.{module_name}")
             print(f"Successfully imported: {module_name}")
-            bot.start() 
-            app.start() 
-            idle()
+            
 
 
 if __name__ == "__main__":
@@ -23,3 +21,6 @@ if __name__ == "__main__":
     loaded_plugins()
     print("All plugins imported successfully.")
     print("Bot is running...")
+    bot.start() 
+    app.start() 
+    idle()
