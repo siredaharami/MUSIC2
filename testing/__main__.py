@@ -4,7 +4,7 @@ import importlib
 from testing import bot, app 
 from pyrogram import idle
 
-def loaded_plugins():
+async def loaded_plugins():
     plugin_dir = "testing/modules"
     plugin_package = "testing.modules"
 
@@ -23,4 +23,3 @@ if __name__ == "__main__":
     print("Bot is running...")
     bot.start() 
     app.start() 
-    idle()
