@@ -1,6 +1,6 @@
 import os
 import importlib
-from bot import app
+from testing import app
 
 def load_plugins():
     plugin_dir = "testing/modules"
