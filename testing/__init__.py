@@ -10,7 +10,7 @@ API_HASH = 'd927c13beaaf5110f25c505b7c071273'
 BOT_TOKEN = '7016394451:AAHVzndz5nyaH5xQ-oOu_Z6tOX3c3Uumd4A'
 
 # Create a Pyrogram Client
-bot = Client("testing", bot_token=BOT_TOKEN)
+bot = Client("testing", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 # Function to load all modules from the modules folder
 def load_modules():
