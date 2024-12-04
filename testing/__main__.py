@@ -10,7 +10,7 @@ async def main():
     async with app:
         await app.start()
         for all_module in ALL_MODULES:
-        importlib.import_module("testing.modules" + all_module)
+            importlib.import_module("testing.modules" + all_module)
         LOGGER("testing.modules").info(
         "Successfully Imported Modules"
         )
