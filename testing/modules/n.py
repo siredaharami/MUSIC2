@@ -124,13 +124,6 @@ app = Client(
     session_string=str(STRING_SESSION),
 )
 
-bot = Client(
-    name="Bot",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
-)
-
 call = PyTgCalls(app)
 call_config = GroupCallConfig(auto_start=False)
 
