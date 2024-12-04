@@ -2,7 +2,7 @@
 
 from pyrogram import Client
 from config import API_ID, API_HASH, BOT_TOKEN
-from handlers import register_handlers
+from testing.handlers import register_handlers
 
 class MyTelegramBot(Client):
     def __init__(self):
