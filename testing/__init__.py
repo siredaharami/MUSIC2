@@ -2,7 +2,7 @@ import os
 from pytgcalls.types import GroupCallConfig
 from pytgcalls import PyTgCalls
 from pyrogram import Client
-from config import BOT_TOKEN, API_ID, API_HASH
+from config import BOT_TOKEN, API_ID, API_HASH, STRING_SESSION
 
 # Create the Pyrogram Client
 bot = Client(
