@@ -12,9 +12,9 @@ def loaded_plugins():
             module_name = file_name[:-3]  # Remove the .py extension
             importlib.import_module(f"{plugin_package}.{module_name}")
             print(f"Successfully imported: {module_name}")
-            await bot.start() 
-            await app.start() 
-            await idle()
+            bot.start() 
+            app.start() 
+            idle()
 
 
 if __name__ == "__main__":
