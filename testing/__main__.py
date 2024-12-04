@@ -12,12 +12,13 @@ async def main():
             module_name = file_name[:-3]  # Remove the .py extension
             importlib.import_module(f"{plugin_package}.{module_name}")
             print(f"Successfully imported: {module_name}")
+            await bot.start() 
+            await app.start() 
+            await idle()
+
 
 if __name__ == "__main__":
     print("Loading plugins...")
     load_plugins()
     print("All plugins imported successfully.")
     print("Bot is running...")
-    await bot.start() 
-    await app.start() 
-    await idle()
