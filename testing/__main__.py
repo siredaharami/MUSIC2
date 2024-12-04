@@ -17,6 +17,6 @@ if __name__ == "__main__":
     load_plugins()
     print("All plugins imported successfully.")
     print("Bot is running...")
-    await bot.start() 
-    await app.start() 
+    bot.start() 
+    app.start() 
     await idle()
