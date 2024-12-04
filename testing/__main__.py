@@ -19,6 +19,6 @@ async def main():
 
 if __name__ == "__main__":
     print("Loading plugins...")
-    load_plugins()
+    main()
     print("All plugins imported successfully.")
     print("Bot is running...")
