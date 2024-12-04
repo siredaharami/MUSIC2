@@ -1,6 +1,6 @@
 import os
 import importlib
-from testing import app
+from testing import app, bot
 
 def load_plugins():
     plugin_dir = "testing/modules"
@@ -18,6 +18,7 @@ if __name__ == "__main__":
     print("All plugins imported successfully.")
     print("Bot is running...")
     app.run()
+    bot.run() 
 
 
 
