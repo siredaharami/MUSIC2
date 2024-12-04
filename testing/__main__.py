@@ -3,7 +3,7 @@ import importlib
 import sys 
 from pyrogram import idle
 from testing.modules import ALL_MODULES
-from testing import app  # Import the app from init.py
+from testing import app, bot # Import the app from init.py
 from pyrogram import filters
 
 async def main():
@@ -15,6 +15,7 @@ async def main():
         "Successfully Imported Modules"
         )
         print("Bot is running...")
+        await bot.start()
         await app.idle()  # Keep the bot running
         
 if __name__ == "__main__":
