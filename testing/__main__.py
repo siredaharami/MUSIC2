@@ -19,4 +19,5 @@ async def main():
         await app.idle()  # Keep the bot running
         
 if __name__ == "__main__":
-    asyncio.run(main())
+    loop.run_until_complete(init())
+    LOGGER("testing").info("Stopping Yukki Music Bot! GoodBye")
