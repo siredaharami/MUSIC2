@@ -1,7 +1,8 @@
 import asyncio
 import os
 import importlib
-from testing import bot, app
+from testing import bot, app 
+from pyrogram import idle
 
 def loaded_plugins():
     plugin_dir = "testing/modules"
