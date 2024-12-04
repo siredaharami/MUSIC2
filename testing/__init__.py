@@ -1,5 +1,8 @@
 import config
 from pyrogram import Client
+from pytgcalls import PyTgCalls, filters as pytgfl
+from pytgcalls.types import GroupCallConfig
+
 
 api_id = 12345  # Replace with your actual API ID
 api_hash = "0123456789abcdef0123456789abcdef"  # Replace with your actual API Hash
