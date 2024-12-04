@@ -15,8 +15,7 @@ async def loaded_plugins():
             print(f"Successfully imported: {module_name}")
             await loaded_plugins()
             await bot.start() 
-            await app.start()
-            await idle() 
+            await app.start() 
 
 
 if __name__ == "__main__":
