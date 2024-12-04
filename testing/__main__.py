@@ -1,10 +1,8 @@
-import asyncio
 import os
 import importlib
-from testing import bot, app 
-from pyrogram import idle
+from testing import bot
 
-async def loaded_plugins():
+def loaded_plugins():
     plugin_dir = "testing/modules"
     plugin_package = "testing.modules"
 
@@ -13,14 +11,13 @@ async def loaded_plugins():
             module_name = file_name[:-3]  # Remove the .py extension
             importlib.import_module(f"{plugin_package}.{module_name}")
             print(f"Successfully imported: {module_name}")
-            await loaded_plugins()
-            await bot.start() 
-            await app.start() 
+            
 
 
 if __name__ == "__main__":
     print("Loading plugins...")
-    
+    loaded_plugins()
+    bot.start()  
     print("All plugins imported successfully.")
     print("Bot is running...")
      
